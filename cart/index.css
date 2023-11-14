@@ -1,0 +1,179 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-title {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+  color: #665f55;
+}
+
+.shopping-cart-block {
+  display: flex;
+}
+
+.shopping-cart {
+  width: 4rem;
+  height: 4rem;
+  padding-left: 4rem;
+  color: #665f55;
+  cursor: pointer;
+  transition: all 0.5s ease-out;
+}
+
+.shopping-cart:hover {
+  color: #b0907a;
+}
+
+.active,
+.delete-icon {
+  color: #d43232;
+}
+
+.delete-icon:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.opened-cart {
+  min-width: 25rem;
+  top: 30%;
+  position: absolute;
+  padding: 1rem;
+  border-radius: 1.25rem;
+  background-color: #e1d4c9;
+  box-shadow: 3px 4px 82px -16px rgba(0, 0, 0, 0.8);
+  -webkit-box-shadow: 3px 4px 82px -16px rgba(0, 0, 0, 0.8);
+  -moz-box-shadow: 3px 4px 82px -16px rgba(0, 0, 0, 0.8);
+  z-index: 1000;
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 1rem 12rem;
+}
+
+.card-block {
+  width: 19.3rem;
+  height: 35rem;
+  margin-bottom: 3rem;
+  border: 0.0625rem solid rgb(230, 154, 154);
+  border-radius: 2.5rem;
+  cursor: pointer;
+}
+
+.card-img-container {
+  width: 19.375rem;
+  height: 19.375rem;
+  overflow: hidden;
+  border-radius: 2.5rem;
+}
+
+.card-img {
+  border-radius: 2.5rem;
+}
+
+.card-block-text {
+  padding: 0rem 1.2rem;
+  text-align: center;
+}
+
+.card-name {
+  font-size: 1.5rem;
+}
+
+.card-description {
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.card-cost {
+  font-size: 1.5rem;
+  color: #d43232;
+}
+
+.add-product {
+  width: 2.5rem;
+  height: 2.5rem;
+  font-size: 1.5rem;
+  color: aliceblue;
+  background-color: #d43232;
+  border-radius: 50%;
+}
+
+.add-product:hover {
+  transform: scale(1.1);
+}
+
+.order-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem;
+}
+
+.order-card-img {
+  width: 6rem;
+  height: 6rem;
+}
+
+.order-block-text {
+  width: 5rem;
+  height: 5rem;
+  padding: 0rem 1rem;
+}
+
+.order-card-name {
+  font-size: 1rem;
+  padding: 0rem;
+}
+
+.order-card-cost {
+  font-size: 1rem;
+  padding: 0rem;
+  color: #d43232;
+}
+
+.count-products {
+  width: 1.5rem;
+  height: 1.5rem;
+  text-align: center;
+  background-color: #fefaf7;
+  color: #0d0d0c;
+  border: 0.0625rem solid rgb(14, 13, 13);
+}
+
+.show-count-order {
+  width: 1.75rem;
+  height: 1.5rem;
+  padding-top: 0.15rem;
+  margin-top: 2rem;
+  border-radius: 50%;
+  background-color: #d43232;
+  color: #fefaf7;
+  text-align: center;
+}
+
+.sum-cost {
+  padding-left: 1rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #d43232;
+}
